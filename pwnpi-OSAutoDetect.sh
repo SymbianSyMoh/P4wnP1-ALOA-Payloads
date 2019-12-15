@@ -24,7 +24,7 @@
   
 while true;
 do
-echo "[*] Wiating for USB attaching event..."
+echo "[*] Waiting for USB attaching event..."
 echo "[*] "$(P4wnP1_cli trigger wait -n usb -v 1)
 # Once USB attaching detected sleep 5 seconds to give time to DHCP server to offer the client a lease
 sleep 5
